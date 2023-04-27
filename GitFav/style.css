@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+
+  --fc-primary: #E1E1E6;
+  --fc-segundary:#065E7C;
+}
+.sr_only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+body{
+  background-color: #020A0D;
+  font-size: 1.6rem;
+}
+
+#app{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+header input{
+  width: 45rem;
+}
+
+.search{
+  display: flex;
+  gap: .8rem;
+}
+
+.search input{
+  background-color: #06181C;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #7C7C8A;
+
+  border: none;
+  border-radius: .5rem;
+
+  padding: 1.6rem;
+}
+
+.search button{
+  background-color: #065E7C;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--fc-primary);
+
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+
+  padding: 1.2rem 3.2rem;
+  border-radius: .8rem;
+
+  cursor: pointer;
+}
+
+.search button:hover{
+  background: white;
+  color: var(--fc-segundary);
+}
+.search button:hover .star_svg{
+  fill: var(--fc-segundary);
+}
+
+#tablediv{
+  margin: 9rem auto;
+  border: 1px solid #4A808C;
+  border-radius: 1rem;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+
+  font-family: 'Roboto', sans-serif;
+  color: var(--fc-primary);
+  text-align: left;
+}
+
+table thead{
+  background-color: #092D38;
+
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+}
+thead tr th{
+  padding: 1.6rem;
+}
+
+table th:first-child{
+  border-top-left-radius: 1rem;
+}
+table th:last-child{
+  border-top-right-radius: 1rem;
+}
+
+tbody img{
+  width: 5rem;
+  height: 5rem;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+table tbody{
+  background: rgba(7, 28, 34, 0.5);
+}
+table tbody tr:nth-child(even){
+  background: #06181C;
+  border-top: 1px solid #4A808C;
+  border-bottom: 1px solid #4A808C;
+}
+
+table td{
+  padding: 1.6rem;
+  text-align: left;
+
+  font-weight: 700;
+}
+td.user{
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+td.user a{
+  color: var(--fc-primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+td.user a span{
+  font-weight: 400;
+}
+
+td button{
+  background: none;
+  border: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+  color: #F75A68;
+
+  cursor: pointer;
+}
